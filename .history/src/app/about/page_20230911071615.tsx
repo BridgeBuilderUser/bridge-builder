@@ -2,7 +2,6 @@
 import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import { BasePage } from '../components/BasePage';
 
  
 const stats = [
@@ -76,9 +75,8 @@ export default function Page() {
 
   return (
  
-    <BasePage>
 
-<div className="relative isolate -z-10">
+        <div className="relative isolate -z-10">
           <svg
             className="absolute inset-x-0 top-0 -z-10 h-[64rem] w-full stroke-gray-200 [mask-image:radial-gradient(32rem_32rem_at_center,white,transparent)]"
             aria-hidden="true"
@@ -120,12 +118,13 @@ export default function Page() {
               <div className="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
                 <div className="w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
                   <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-                      We mesh Salesforce into your business, not the other way around.
+                    We’re changing the way people connect.
                   </h1>
                   <p className="relative mt-6 text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none">
-                    All too often Salesforce implementations are a one-size-fits-all approach. We believe that your
-                    business is unique and your Salesforce implementation should be too. We work with you to understand
-                    your business and your goals and then we build a Salesforce solution that fits your needs.
+                    Cupidatat minim id magna ipsum sint dolor qui. Sunt sit in quis cupidatat mollit aute velit. Et
+                    labore commodo nulla aliqua proident mollit ullamco exercitation tempor. Sint aliqua anim nulla sunt
+                    mollit id pariatur in voluptate cillum. Eu voluptate tempor esse minim amet fugiat veniam occaecat
+                    aliqua.
                   </p>
                 </div>
                 <div className="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0">
@@ -381,6 +380,5 @@ export default function Page() {
           </div>
         </div>
 
-            </BasePage>
   )
 }

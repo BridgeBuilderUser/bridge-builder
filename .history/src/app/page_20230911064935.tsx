@@ -171,8 +171,7 @@ export default function Home() {
 
       
       {/* CTA Section */}
-      <NewsLetterHero />
-      {/* <div className="bg-white">
+      <div className="bg-white">
         <div className="mx-auto max-w-4xl py-16 px-4 sm:px-6 sm:py-24 lg:flex lg:max-w-7xl lg:items-center lg:justify-between lg:px-8">
           <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             <span className="block">Ready to get started?</span>
@@ -195,7 +194,7 @@ export default function Home() {
             </a>
           </div>
         </div>
-      </div> */}
+      </div>
     </BasePage>
   );
 }
