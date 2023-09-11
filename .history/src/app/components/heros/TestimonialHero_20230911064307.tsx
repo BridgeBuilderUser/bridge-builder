@@ -148,8 +148,6 @@ export default function TestimonialHero() {
                       </blockquote>
                       <figcaption className="mt-6 flex items-center gap-x-4">
                         <Image
-                        height={40}
-                        width={40}
                          className="h-10 w-10 rounded-full bg-gray-50" src={testimonial.author.imageUrl} alt="" />
                         <div>
                           <div className="font-semibold">{testimonial.author.name}</div>

@@ -1,7 +1,6 @@
 "use client";
 
-import Link from "next/link";
-
+import gsap from "gsap";
 import {
   ChatBubbleBottomCenterTextIcon,
   ChatBubbleLeftRightIcon,
@@ -71,7 +70,7 @@ export default function Navigation() {
 
   return (
     <header className="flex items-center justify-center p-3 sticky top-0 z-50 bg-white shadow-md w-full">
-      <div className="flex w-full max-w-[90vw] h-full gap-5">
+      <div className="flex w-full max-w-[90vw] h-full">
         <div className="w-1/6">
           <Logo className="h-full w-auto" />
         </div>
@@ -84,14 +83,19 @@ export default function Navigation() {
             ))}
           </ul>
         </nav>
-        <div className="w-1/6 flex gap-5">
+        <div className="w-1/6">
           <Link
-            href="/contact"
-            className="flex items-center justify-center rounded-md border border-transparent bg-indigo-500 px-4 py-3 text-sm font-medium text-white shadow-sm hover:bg-opacity-70 sm:px-8"
+            href="/solutions"
+            className="flex items-center justify-center rounded-md border border-transparent bg-indigo-500 px-4 py-3 text-base font-medium text-white shadow-sm hover:bg-opacity-70 sm:px-8"
           >
-            Request A Demo
+            Learn More
           </Link>
-         
+          <Link
+            href="/solutions"
+            className="flex items-center justify-center rounded-md border border-transparent bg-indigo-500 px-4 py-3 text-base font-medium text-white shadow-sm hover:bg-opacity-70 sm:px-8"
+          >
+            Learn More
+          </Link>
         </div>
       </div>
     </header>

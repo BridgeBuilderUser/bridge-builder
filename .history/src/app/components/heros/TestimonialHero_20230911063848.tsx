@@ -108,9 +108,7 @@ export default function TestimonialHero() {
               <p>{`“${featuredTestimonial.body}”`}</p>
             </blockquote>
             <figcaption className="flex items-center gap-x-4 border-t border-gray-900/10 px-6 py-4">
-              <Image
-                height={40}
-                width={40}
+             <img fill
                 className="h-10 w-10 flex-none rounded-full bg-gray-50"
                 src={featuredTestimonial.author.imageUrl}
                 alt=""
@@ -119,10 +117,7 @@ export default function TestimonialHero() {
                 <div className="font-semibold">{featuredTestimonial.author.name}</div>
                 <div className="text-gray-600">{`@${featuredTestimonial.author.handle}`}</div>
               </div>
-              <Image
-              height={40}
-              width={40}
-               className="h-10 w-auto flex-none" src={featuredTestimonial.author.logoUrl} alt="" />
+             <img fill className="h-10 w-auto flex-none" src={featuredTestimonial.author.logoUrl} alt="" />
             </figcaption>
           </figure>
           {testimonials.map((columnGroup, columnGroupIdx) => (
@@ -147,10 +142,7 @@ export default function TestimonialHero() {
                         <p>{`“${testimonial.body}”`}</p>
                       </blockquote>
                       <figcaption className="mt-6 flex items-center gap-x-4">
-                        <Image
-                        height={40}
-                        width={40}
-                         className="h-10 w-10 rounded-full bg-gray-50" src={testimonial.author.imageUrl} alt="" />
+                       <img fill className="h-10 w-10 rounded-full bg-gray-50" src={testimonial.author.imageUrl} alt="" />
                         <div>
                           <div className="font-semibold">{testimonial.author.name}</div>
                           <div className="text-gray-600">{`@${testimonial.author.handle}`}</div>

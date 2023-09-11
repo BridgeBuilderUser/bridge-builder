@@ -71,7 +71,7 @@ export default function Navigation() {
 
   return (
     <header className="flex items-center justify-center p-3 sticky top-0 z-50 bg-white shadow-md w-full">
-      <div className="flex w-full max-w-[90vw] h-full gap-5">
+      <div className="flex w-full max-w-[90vw] h-full">
         <div className="w-1/6">
           <Logo className="h-full w-auto" />
         </div>
