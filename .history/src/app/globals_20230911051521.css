@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+
+input {
+  @apply bg-gray-300 rounded-xl p-1 text-black h-[46px] w-full;
+}
+
+.hero {
+  background-color: hsl(206, 27%, 38%);
+  background-blend-mode: multiply;
+}
+
+.blue-gradient {
+  @apply  from-blue-800 to-indigo-400;
+}
+
+ img.relative {
+  position: relative !important;
+ }
+
+ header {
+  height: auto;
+  max-height: 80px;;
+ }
