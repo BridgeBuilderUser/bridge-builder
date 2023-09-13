@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+::-webkit-scrollbar {
+  display: none;
+}
+body {
+  color: rgb(var(--foreground-rgb));
+}
+
+
+input {
+  @apply bg-gray-300 rounded-xl p-1 text-black h-[46px] w-full;
+}
+
+.hero {
+  background-color: hsl(206, 27%, 38%);
+  background-blend-mode: multiply;
+}
+
+.blue-gradient {
+  @apply  from-blue-800 to-indigo-400;
+}
+
+ img.relative {
+  position: relative !important;
+ }
+
+ header {
+  height: auto;
+  max-height: 80px;;
+ }
+
+nav.mobile {
+  transition: transform 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.mobile.closed {
+  transform: translateX(-100%);
+}
+
+.mobile.open {
+  transform: translateX(0%);
+}
+
+.font-montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+.font-montserrat-black {
+  font-family: 'Montserrat Black', sans-serif;
+}
+
+ .scroll-track {
+  background-color: lightgray;
+  height: calc(90vh - 6rem);
+  top: 50%;
+  transform: translateY(calc(-50% + 1rem));
+ }
+
+  .scroll-bar {
+    background-color: darkblue;
+  }
+
+  #debugger {
+    position: fixed;
+    top: 95vh;
+    z-index: 999999999;
+    width: 90vw;
+    height: 100px;
+    transform: translate3d(-50%, -100%, 0);
+  }
+
+  
+
+  .char {
+    position: fixed;
+  }

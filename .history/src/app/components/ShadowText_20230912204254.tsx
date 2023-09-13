@@ -1,0 +1,37 @@
+import cn from "classnames";
+import { useEffect, useRef } from "react";
+
+export default function ShadowText({
+  children,
+  position = "top",
+  size = "30vh",
+}: any) {
+  const ref = useRef(null);
+  useEffect(() => {
+    gsap.to(".shadow-text", {
+      scrollTrigger: {
+        trigger: ".shadow-text",
+        start: "0",
+        end: "max",
+        scrub: 1,
+        markers: true,
+      },
+      yPercent: -100,
+      ease: "power2.out",
+    });
+  }, []);
+
+  const classes = cn(
+    `left-[-10%] z-[-1] font-montserrat-black font-black fixed w-auto h-auto [writing-mode:tb] text-[40vh] bg-gradient-to-r from-transparent from-20% to-indigo-800 bg-clip-text text-transparent break-words whitespace-nowrap`,
+    {
+      "top-0": position === "top",
+      "top-1/2 -translate-y-1/2": position === "center",
+    }
+  );
+
+  return (
+    <div ref={ref} className={`shadow-text ${classes}`}>
+      {children}
+    </div>
+  );
+}
